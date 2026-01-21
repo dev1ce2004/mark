@@ -40,7 +40,7 @@ VS (Windows), biblioteka (SDL3), jezik (C)
     
     **ENTER** - start/return
 
-##possible update:
+## possible update:
 
     duze trajanje (wave-ovi umjesto constant spawna)
     
