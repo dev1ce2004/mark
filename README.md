@@ -15,11 +15,17 @@ VS (Windows), biblioteka (SDL3), jezik (C)
 
 ## FUNKCIONALNOSTI:
   main menu
+  
   death screen (game over)
+  
   osnovni UI/HUD (HP, ammo, reload (trenutno 18/inf), kill count (scoreboard metrika)
+  
   vise tipova neprijatelja (obicni, mali brzi, tenk, i lik sta puca (archer iako nema strijele))
+  
   mehanike: pucanje, dashanje i regen (potrebno balance outat dodatno)
+  
   vizualni feedback (damage nums, dash indikator)
+  
   spremanje rezultata (arcade-style lb)
 
 
