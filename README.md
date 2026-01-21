@@ -31,9 +31,13 @@ VS (Windows), biblioteka (SDL3), jezik (C)
 
 ## KONTROLE:
     **WASD** - movement
+    
     **LMB/CTRL** - shoot
+    
     **SPACE** - dash
+    
     **R** - reload
+    
     **ENTER** - start/return
 
 ##possible update:
