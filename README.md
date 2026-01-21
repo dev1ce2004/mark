@@ -1,5 +1,6 @@
 # mark
 arena shooter (arcade dir igre)
+
 VS (Windows), biblioteka (SDL3), jezik (C)
 
 **Pokretanje**
