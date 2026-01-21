@@ -4,10 +4,10 @@ VS (Windows), biblioteka (SDL3), jezik (C)
 
 **Pokretanje**
   Iz VS-a, ali je potrebno rucno podesit SDL3
-    1. Desni klik na projekt -> properties
-    2. **C/C++** -> General -> Addiotional Include Directories (path/do/SDL3/include)
-    3. **Linker** -> General -> Addiotional Library Directories (path/do/SDL3/lib/x64)
-    4. **Linker** -> Input -> Additional Dependencies (dodat SDL3.lib)
+    - 1. Desni klik na projekt -> properties
+    - 2. **C/C++** -> General -> Addiotional Include Directories (path/do/SDL3/include)
+    - 3. **Linker** -> General -> Addiotional Library Directories (path/do/SDL3/lib/x64)
+    - 4. **Linker** -> Input -> Additional Dependencies (dodat SDL3.lib)
 
 ## FUNKCIONALNOSTI:
   main menu
