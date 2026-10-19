@@ -1,58 +1,56 @@
-# mark
-arena shooter (arcade dir igre)
+# Arena Shooter
 
-VS (Windows), biblioteka (SDL3), jezik (C)
+A fast-paced, arcade-style top-down arena shooter written in **C** using **SDL3**. Survive as long as you can against endless waves of enemies, rack up kills, and climb the local leaderboard.
 
-**Pokretanje**
-  Iz VS-a, ali je potrebno rucno podesit SDL3
-  
-    1. Desni klik na projekt -> properties
-    
-    2. **C/C++** -> General -> Addiotional Include Directories (path/do/SDL3/include)
-    
-    3. **Linker** -> General -> Addiotional Library Directories (path/do/SDL3/lib/x64)
-    
-    4. **Linker** -> Input -> Additional Dependencies (dodat SDL3.lib)
+![Gameplay](docs/gameplay.gif)
 
-## FUNKCIONALNOSTI:
-    main menu
-  
-    death screen (game over)
-  
-    osnovni UI/HUD (HP, ammo, reload (trenutno 18/inf), kill count (scoreboard metrika)
-  
-    vise tipova neprijatelja (obicni, mali brzi, tenk, i lik sta puca (archer iako nema strijele))
-  
-    mehanike: pucanje, dashanje i regen (potrebno balance outat dodatno)
-  
-    vizualni feedback (damage nums, dash indikator)
-  
-    spremanje rezultata (arcade-style lb)
+## Tech Stack
 
+- **Language:** C
+- **Library:** SDL3
+- **IDE / Platform:** Visual Studio (Windows)
 
-## KONTROLE:
-    **WASD** - movement
-    
-    **LMB/CTRL** - shoot
-    
-    **SPACE** - dash
-    
-    **R** - reload
-    
-    **ENTER** - start/return
+## Features
 
-## possible update:
+- **Main menu** and **game over screen**
+- **HUD** showing health, ammo, reload status (currently 18-round magazine / infinite reserve) and kill count
+- **Multiple enemy types:**
+  - **Grunt**: standard melee enemy
+  - **Runner**: small and fast
+  - **Tank**: slow, high health
+  - **Shooter**: ranged enemy that fires projectiles
+- **Core mechanics:** shooting, dashing and health regeneration
+- **Visual feedback:** floating damage numbers and a dash cooldown indicator
+- **Arcade-style leaderboard** with persistent score saving
 
-    duze trajanje (wave-ovi umjesto constant spawna)
-    
-    boos nakon odredenog broja killova
-  
-    zvuk (efekti i glazba)
-    
-    sustav tezine (myb ne zato sta je arcade style igra)
-    
-    postavke igre (volume, kontrole)
-    
-    druga metrika bodovanja (combo, bonus bodovi) 
-    
-    ...
+## Controls
+
+| Key | Action |
+|-----|--------|
+| `W` `A` `S` `D` | Move |
+| `LMB` / `Ctrl` | Shoot |
+| `Space` | Dash |
+| `R` | Reload |
+| `Enter` | Start / Return |
+
+## Building and Running
+
+The project is built and run from Visual Studio. SDL3 must be linked manually:
+
+1. Download the SDL3 development libraries for Visual Studio from the [SDL releases page](https://github.com/libsdl-org/SDL/releases).
+2. Right-click the project and select **Properties**.
+3. **C/C++ → General → Additional Include Directories**: add `path/to/SDL3/include`
+4. **Linker → General → Additional Library Directories**: add `path/to/SDL3/lib/x64`
+5. **Linker → Input → Additional Dependencies**: add `SDL3.lib`
+6. Copy `SDL3.dll` from `path/to/SDL3/lib/x64` into the same folder as the built `.exe`.
+7. Build and run (`F5`).
+
+## Roadmap
+
+- [ ] Wave-based spawning instead of constant spawns, for longer runs
+- [ ] Boss fight after a set number of kills
+- [ ] Sound effects and music
+- [ ] Settings menu (volume, key rebinding)
+- [ ] Extended scoring: combo multipliers and bonus points
+- [ ] Further balancing of dash and regeneration
+- [ ] Difficulty levels (still deciding whether this suits the arcade style)
